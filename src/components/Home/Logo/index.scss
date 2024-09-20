@@ -10,13 +10,6 @@
   left: auto;
   margin: auto;
 
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(0deg) !important;
-  }
-
   img {
     padding-top: 70px;
   }
@@ -33,9 +26,4 @@
     transform: rotateZ(0deg) !important;
     z-index: 1;
   }
-}
-
-.svg-container {
-  stroke: #00fff2;
-  stroke-width: 10;
 }
