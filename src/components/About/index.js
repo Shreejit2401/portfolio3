@@ -16,9 +16,10 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
@@ -33,18 +34,18 @@ const About = () => {
             />
           </h1>
           <p>
-          I am pursuing MSc in Artificial Intelligence Systems at University of Florida, Gainesville.
+            I am pursuing MSc in Artificial Intelligence Systems at University of Florida, Gainesville.
           </p>
 
           <p>
-          As an alumini of VBIT, I take pride for maintaining a stellar CGPA of 8.63 in my UG. 
-          Apart from that, I have developed a passion for the field of Artificial Intelligence 
-          and using the technology to solve complex problems.
+            As an alumini of VBIT, I take pride for maintaining a stellar CGPA of 8.63 in my UG.
+            Apart from that, I have developed a passion for the field of Artificial Intelligence
+            and using the technology to solve complex problems.
           </p>
 
           <p align="LEFT">
-            In addition to my technical skills in Machine Learning, Artificial Intelligence, 
-            Data Science, Data Analytics, and Competitive Programming, I am proficient in programming languages such as C, 
+            In addition to my technical skills in Machine Learning, Artificial Intelligence,
+            Data Science, Data Analytics, and Competitive Programming, I am proficient in programming languages such as C,
             Java, Python, SQL, HTML and CSS, JavaScript, R, and MS Office.
           </p>
 
@@ -52,18 +53,18 @@ const About = () => {
             What sets me apart? Here are some highlights:
             <ul>
               <li>
-              With over 1 year of internship experience in AI & ML, 
-              another year as an Founder's Office Intern and 4 months in Data Analysis, 
-              I have gained valuable industry experience and knowledge of cutting-edge technologies and techniques.
+                With over 1 year of internship experience in AI & ML,
+                another year as an Founder's Office Intern and 4 months in Data Analysis,
+                I have gained valuable industry experience and knowledge of cutting-edge technologies and techniques.
               </li>
               <li>
-              I have completed 30+ Machine Learning projects, all of which are available on my GitHub profile (Sidebar). 
-              These projects showcase my skills in data analysis, predictive modeling, and more.
+                I have completed 30+ Machine Learning projects, all of which are available on my GitHub profile (Sidebar).
+                These projects showcase my skills in data analysis, predictive modeling, and more.
               </li>
               <li>
-              I am certified in 2 ServiceNow courses, Google Data Analysis cohort, 2 AWS Academy Courses, 
-              a Microsoft AI fundamentals course, a Microsoft Data Fundamentals course, and a variety of other courses. 
-              My love for learning inspires me to constantly seek out new opportunities to enhance my skills and knowledge.
+                I am certified in 2 ServiceNow courses, Google Data Analysis cohort, 2 AWS Academy Courses,
+                a Microsoft AI fundamentals course, a Microsoft Data Fundamentals course, and a variety of other courses.
+                My love for learning inspires me to constantly seek out new opportunities to enhance my skills and knowledge.
               </li>
             </ul>
           </p>
